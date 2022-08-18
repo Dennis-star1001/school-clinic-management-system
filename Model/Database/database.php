@@ -5,7 +5,7 @@ class Database
     private $host = 'localhost';
     private $user = 'root';
     private $password = '';
-    private $databaseName = 'contribution_db';
+    private $databaseName = 'school_clinic_management_system';
 
     private $con = false;
     private $myConn = '';

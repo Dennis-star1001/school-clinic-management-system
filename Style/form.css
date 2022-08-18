@@ -1,0 +1,32 @@
+.form{
+    /* border: 1px solid black; */
+    
+    padding: 20px;
+    box-shadow: 0 0 3px 1px;
+    
+}
+.form .btn {
+    margin-top: 20px;
+}
+.form .btn .btn_doctor{
+    padding: 5px;
+}
+.input_fields{
+   margin-top: 20px;
+}
+
+.input_fields input{
+    width: 300px;
+    height: 30px;
+}
+.right .right_form {
+   
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95%;
+    background-color: #f1f3f6;
+}
