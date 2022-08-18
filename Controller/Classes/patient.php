@@ -1,7 +1,7 @@
 <?php
-class Patience extends Database
+class Patient extends Database
 {
-    //Patience datas
+    //Patience datas 
     private $name;
     private $age;
     private $contact;
@@ -12,39 +12,39 @@ class Patience extends Database
 
 
     //Patience table
-    private $patience_table = '';
+    private $patient_table = '';
 
 
     //View patience info
-    public function patienceInfo($condition, $fields = "*", $column = "")
+    public function patientInfo($condition, $fields = "*", $column = "")
     {
-        return $this->lookUp($this->patience_table, $fields, $condition, $column);
+        return $this->lookUp($this->patient_table, $fields, $condition, $column);
     }
 
 
     //Count patience info from database
-    public function numOfPatienceRows($condition)
+    public function numOfPatientRows($condition)
     {
-        return $this->countRows($this->patience_table, "*", $condition);
+        return $this->countRows($this->patient_table, "*", $condition);
     }
 
 
     //Check if the parameter exist in the database
     public function isExist($condition)
     {
-        return $this->numOfPatienceRows($condition);
+        return $this->numOfPatientRows($condition);
     }
 
     //Validation for patience info
-    public function patienceValidation()
+    public function patientsValidation()
     {
         if (Fun::checkForEmptyInput([$this->name, $this->age, $this->contact, $this->department, $this->matric_no, $this->level, $this->course])) {
             Fun::redirect("", "", "");
         }
     }
     //Save patience info imto the database
-    public function savePatienceInfo()
+    public function savePatientInfo()
     {
-        return $this->save($this->patience_table, "");
+        return $this->save($this->patient_table, "");
     }
 }
