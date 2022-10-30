@@ -40,8 +40,11 @@ class Doctor extends Database
     public function validation()
     {
         if (Fun::checkForEmptyInput([$this->name, $this->date_of_birth, $this->phone, $this->email, $this->doctor_type])) {
-            Fun::redirect("", "", "");
+            Fun::redirect("../../View/doctor.php", "err", "None of the fields must be empty");
+            exit;
         }
+    Fun::redirect("../../View/doctor.php", "success", "Data has been saved");
+        
     }
 
     public function processDoctorInfo($name, $date_of_birth, $phone, $email, $doctor_type)
@@ -51,13 +54,15 @@ class Doctor extends Database
         $this->phone = $phone;
         $this->email = $email;
         $this->doctor_type = $doctor_type;
+        $this->validation();
         $this->saveDoctorInfo();
     }
 
     //Save Doctor info to database
     public function saveDoctorInfo()
-    { 
-        //    $doctor->processDoctorInfo($_POST['name'], $_POST['date_of_birth'], $_POST['phone'], $_POST['email'], $_POST['doctor_type']);
+    {
+
+        
         return $this->save($this->doc_table, "name = '$this->name', date_of_birth = '$this->date_of_birth', phone='$this->phone', email = '$this->email', doctor_type='$this->doctor_type'");
     }
 }

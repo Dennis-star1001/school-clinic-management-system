@@ -4,29 +4,29 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.logo{
+
+.logo {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
+
 h2 {
     color: white;
     font-size: 15px;
     text-align: left;
     text-align: center;
 }
+
 .oaustech_logo {
     display: flex;
     justify-content: center;
 }
 
 body {
-
-  
     height: 100vh;
     display: flex;
-
 }
 
 .left {
@@ -34,14 +34,14 @@ body {
     width: 15%;
     height: 100%;
     padding: 15px;
-    
 }
 
 .navbar {
     text-align: left;
     padding-top: 30px;
 }
-.top_navbar{
+
+.top_navbar {
     background-color: #96231c;
     display: flex;
     justify-content: flex-end;
@@ -49,13 +49,13 @@ body {
     height: 5%;
     list-style: none;
     text-decoration: none;
-   
 }
-.top_navbar li{
+
+.top_navbar li {
     padding: 5px;
-    
 }
-.top_navbar li a{
+
+.top_navbar li a {
     color: white;
 }
 
@@ -80,20 +80,17 @@ a {
 
 .navbar a {
     text-decoration: none;
-
     color: white;
     padding: 10px;
     font-size: 12px;
-
 }
 
 .right {
-    width: 85%;
-
+    height: 100vh;
+    width: 100vw;
 }
 
 .right .right_container .title {
-
     max-width: 50%;
     text-align: center;
     color: #96231c;
@@ -116,21 +113,20 @@ a {
 }
 
 .login_btn {
-    
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #57787d;
     border-radius: 5px;
-
 }
-span{
+
+span {
     color: black;
 }
+
 .login_btn:hover {
     background-color: #57787d;
     border: none;
     color: white;
-
 }
 
 .login_btn:hover {
