@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5f4e8c24f2242a593a14c54a1a4e65ceed7ceee5
 * {
     box-sizing: border-box;
     padding: 0;
     font-family: "Quicksand";
     margin: 0;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f4e8c24f2242a593a14c54a1a4e65ceed7ceee5
 }
 
 .form {
     /* border: 1px solid black; */
+<<<<<<< HEAD
     padding: 20px;
     box-shadow: 0 0 3px 1px;
+=======
+
+    padding: 20px;
+    box-shadow: 0 0 3px 1px;
+
+>>>>>>> 5f4e8c24f2242a593a14c54a1a4e65ceed7ceee5
 }
 
 .form .btn {
@@ -34,6 +50,7 @@
 }
 
 .right .right_form {
+<<<<<<< HEAD
     background-color: #f1f3f6;
     display: flex;
     justify-content: center;
@@ -44,6 +61,10 @@
     width: 100%;
     background-color: pink;
     color: red;
+=======
+
+    padding-left: 50px;
+>>>>>>> 5f4e8c24f2242a593a14c54a1a4e65ceed7ceee5
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,10 +79,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+=======
+    flex-direction: column;
+    height: 95%;
+    background-color: #f1f3f6;
+}
+
+.error {
+
+    width: 100%;
+    background-color: pink;
+    color: red;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+
+}
+
+.success {
+    height: 5%;
+    width: 100%;
+    background-color: lightgreen;
+    color: green;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 5f4e8c24f2242a593a14c54a1a4e65ceed7ceee5
     font-size: 15px;
 }
 
 .form_grid {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f4e8c24f2242a593a14c54a1a4e65ceed7ceee5
     display: grid;
     grid-template-columns: 350px 300px;
 }
