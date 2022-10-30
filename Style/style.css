@@ -87,12 +87,7 @@ a {
 }
 
 .right {
-<<<<<<< HEAD
    display: flex;
-=======
-    height: 100vh;
-    width: 100vw;
->>>>>>> 2fa7c44fd60d6c5ec38c8ef5b903f86b36726c49
 }
 
 .right .right_container .title {
