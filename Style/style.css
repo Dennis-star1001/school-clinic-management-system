@@ -89,8 +89,7 @@ a {
 }
 
 .right {
-    width: 85%;
-
+   display: flex;
 }
 
 .right .right_container .title {
