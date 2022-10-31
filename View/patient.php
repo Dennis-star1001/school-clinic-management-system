@@ -22,15 +22,32 @@ if (isset($_GET['err'])) {
 </head>
 
 <body>
-    <?php require('../View/navbar.php') ?>
-    <div class="right">
-        <?php require('../View/top_navbar.php') ?>
+    <?php
+    //  require('../View/navbar.php') 
+    ?>
+    <div class="container">
+        <?php 
+        // require('../View/top_navbar.php')
+         ?>
 
+<<<<<<< HEAD
         <div class="right_form">
             <form action="../Model/Backend/backend.php" method="post" class="form">
                 <?php echo "<div class=$clas>$err</div>" ?>
                 <?php echo "<div class=$clas>$success</div>" ?>
                 <h1>Register Patient</h1>
+=======
+        <!-- <div class="patient_form"> -->
+            <form action="../Model/Backend/backend.php" method="post" class='form'>
+                <div class="patient_form">
+                <?php echo "<div class=$clas>$err</div>" ?>
+                <?php echo "<div class=$clas>$success</div>" ?>
+                <div class="logo">
+                     <img src="../assets/oaustech_logo.png" alt="oaustech_logo" width="60px" >
+                </div>
+               
+                <h1 class='title'>Register Patient</h1>
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
                 <div class="form_grid">
                 <div class="input_fields">
                     <label for="name">Name</label><br>
@@ -82,12 +99,23 @@ if (isset($_GET['err'])) {
                     <label for="sickness">Sickness</label><br>
                     <input type="text" name="sickness" id="">
                 </div>
+<<<<<<< HEAD
                 </div>
                 <div class="btn">
                     <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
                 </div>
 
+=======
+</div>
+                <div class="btn">
+                    <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
+                </div>
+</div>
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
             </form>
+        <!-- </div> -->
+        <div class='patient_img'>
+            <img class="image_side_patient" src="../assets/patient.jpg" alt="kid praying">
         </div>
     </div>
 </body>

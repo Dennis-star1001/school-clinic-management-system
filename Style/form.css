@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
 * {
     box-sizing: border-box;
     padding: 0;
     font-family: "Quicksand";
     margin: 0;
+<<<<<<< HEAD
 
 }
 
@@ -17,6 +21,16 @@
 
 }
 
+=======
+}
+
+.container {
+    height: 99vh;
+    width: 100vw;
+}
+
+
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
 .form .btn {
     margin-top: 20px;
 }
@@ -31,23 +45,82 @@
 
 .input_fields {
     margin-top: 20px;
+<<<<<<< HEAD
 }
 
 .input_fields input {
     width: 300px;
     height: 30px;
+=======
+}
+
+.input_fields input {
+    width: 250px;
+    height: 25px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 20px;
+    
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
 }
 
 .right .right_form {
+<<<<<<< HEAD
+=======
+    background-color: #f1f3f6;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center
+}
+
+.error {
+    width: 100%;
+    background-color: pink;
+    color: red;
+
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
 
     padding-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+}
+
+.success {
+    height: 5%;
+    width: 100%;
+    background-color: lightgreen;
+    color: green;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
     height: 95%;
     background-color: #f1f3f6;
+=======
+    align-items: center;
+   
+  
+
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
 }
 
 .error {
@@ -77,7 +150,36 @@
 }
 
 .form_grid {
+<<<<<<< HEAD
 
     display: grid;
     grid-template-columns: 350px 300px;
 }
+=======
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+.image_side {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+.image_side_patient{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.patient_img{
+    width: 60%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+>>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
