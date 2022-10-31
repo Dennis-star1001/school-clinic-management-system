@@ -26,39 +26,28 @@ if (isset($_GET['err'])) {
     //  require('../View/navbar.php') 
     ?>
     <div class="container">
-        <?php 
-        // require('../View/top_navbar.php')
-         ?>
+        <?php
+        // require('../View/top_navbar.php')    
+        ?>
 
-<<<<<<< HEAD
-        <div class="right_form">
-            <form action="../Model/Backend/backend.php" method="post" class="form">
-                <?php echo "<div class=$clas>$err</div>" ?>
-                <?php echo "<div class=$clas>$success</div>" ?>
-                <h1>Register Patient</h1>
-=======
         <!-- <div class="patient_form"> -->
-            <form action="../Model/Backend/backend.php" method="post" class='form'>
-                <div class="patient_form">
-                <?php echo "<div class=$clas>$err</div>" ?>
-                <?php echo "<div class=$clas>$success</div>" ?>
-                <div class="logo">
-                     <img src="../assets/oaustech_logo.png" alt="oaustech_logo" width="60px" >
-                </div>
-               
-                <h1 class='title'>Register Patient</h1>
->>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
-                <div class="form_grid">
+        <form action="../Model/Backend/backend.php" method="post" class='patient_form'>
+
+
+            <div class="logo">
+                <img src="../assets/oaustech_logo.png" alt="oaustech_logo" width="60px">
+            </div>
+
+            <h1 class='title'>Register Patient</h1>
+            <?php echo "<div class=$clas>$err</div>" ?>
+            <?php echo "<div class=$clas>$success</div>" ?>
+            <div class="form_grid">
                 <div class="input_fields">
                     <label for="name">Name</label><br>
                     <input type="name" name="name" id="">
                 </div>
-                <!-- <div class="input_fields">
-                    <label for="Gender">Gender</label><br>
-                    <input type="radio" id="" name="male">
-                    <input type="radio" id="" name="female">
-                </div> -->
-              
+                
+
                 <div class="input_fields">
                     <label for="level">Level</label><br>
                     <input type="text" name="level" id="">
@@ -75,10 +64,7 @@ if (isset($_GET['err'])) {
                     <label for="program">Program</label><br>
                     <input type="text" name="program" id="">
                 </div>
-                <div class="input_fields">
-                    <label for="faculty">Faculty</label><br>
-                    <input type="text" name="faculty" id="">
-                </div>  
+              
                 <div class="input_fields">
                     <label for="email">Email</label><br>
                     <input type="email" name="email" id="">
@@ -96,23 +82,26 @@ if (isset($_GET['err'])) {
                     <input type="text" name="genotype" id="">
                 </div>
                 <div class="input_fields">
-                    <label for="sickness">Sickness</label><br>
-                    <input type="text" name="sickness" id="">
+                    <label for="illness">Illness</label><br>
+                    <input type="text" name="illness" id="">
                 </div>
-<<<<<<< HEAD
+               
+                <div class="input_fields gender_field">
+                    <label for="Gender">Gender</label><br>
+                    <select name="" id="">
+                        <option class="input" name="gender" value="">Male</option>
+                        <option  class="input" value="" name="gender">Female</option>
+                    </select>
                 </div>
-                <div class="btn">
-                    <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
+                <div class="input_fields">
+                    <label for="matric_no">Matric Number</label><br>
+                    <input type="text" name="matric_no" id="">
                 </div>
-
-=======
-</div>
-                <div class="btn">
-                    <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
-                </div>
-</div>
->>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
-            </form>
+            </div>
+            <div class="btn">
+                <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
+            </div>
+        </form>
         <!-- </div> -->
         <div class='patient_img'>
             <img class="image_side_patient" src="../assets/patient.jpg" alt="kid praying">

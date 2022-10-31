@@ -34,18 +34,14 @@ if (isset($_GET['err'])) {
 
         <div class="right_form">
             <form action="../Model/Backend/backend.php" method="post" class='form'>
-                <?php echo "<div class=$clas>$err</div>" ?>
-                <?php echo "<div class=$clas>$success</div>" ?>
-<<<<<<< HEAD
-                <h1>Register Doctor</h1>
-=======
+               
                 <div class="logo">
                      <img src="../assets/oaustech_logo.png" alt="oaustech_logo" width="60px" >
                 </div>
                
                 <h1 class='title'>Register Doctor</h1>
-             
->>>>>>> 532557ff157e55d0d29c5450e8f89967a2d723f5
+                <?php echo "<div class=$clas>$err</div>" ?>
+                <?php echo "<div class=$clas>$success</div>" ?>
                 <div class="input_fields">
                     <label for="name">Name</label><br>
                     <input type="name" name="name" id="">
