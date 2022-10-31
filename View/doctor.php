@@ -1,3 +1,15 @@
+<?php
+$err = "";
+$success = '';
+$clas = "empty";
+if (isset($_GET['err'])) {
+    $err = $_GET['err'];
+    $clas = 'error';
+} elseif (isset($_GET['success'])) {
+    $success = $_GET['success'];
+    $clas = 'success';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +30,9 @@
 
         <div class="right_form">
             <form action="../Model/Backend/backend.php" method="post" class='form'>
-                <h1>Regsiter Doctor</h1>
+                <?php echo "<div class=$clas>$err</div>" ?>
+                <?php echo "<div class=$clas>$success</div>" ?>
+                <h1>Register Doctor</h1>
                 <div class="input_fields">
                     <label for="name">Name</label><br>
                     <input type="name" name="name" id="">
@@ -40,7 +54,7 @@
                     <input type="text" name="doctor_type" id="">
                 </div>
                 <div class="btn">
-                    <input type="submit" name="btn_doctor"  class="btn_doctor" id="btn_doctor">
+                    <input type="submit" name="btn_doctor" class="btn_doctor" id="btn_doctor">
                 </div>
             </form>
         </div>
