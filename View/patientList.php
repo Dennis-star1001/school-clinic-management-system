@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
         <?php require('../View/navbar.php') ?>
         <div class="main">
             <?php require('../View/top_navbar.php') ?>
@@ -19,167 +19,167 @@
                 <div class="table-responsive">
 
 
-        <table class="table table-bordered" id="custormers" width="100%" cellspacing="30">
+                    <table class="table table-bordered" id="custormers" width="100%" cellspacing="30">
+                        <h1 class="title_p">List of Available Patients</h1>
+                        <thead>
 
-            <thead>
+                            <tr>
 
-                <tr>
+                                <th>ID</th>
 
-                    <th>ID</th>
+                                <th>Name</th>
 
-                    <th>Name</th>
+                                <th>Level</th>
 
-                    <th>Level</th>
+                                <th>Age</th>
 
-                    <th>Age</th>
+                                <th>Department</th>
+                                <th>Program</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Blood Group</th>
+                                <th>Genotype</th>
+                                <th>Illness</th>
+                                <th>Gender</th>
+                                <th>Matric Number</th>
 
-                    <th>Department</th>
-                    <th>Program</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                    <th>Blood Group</th>
-                    <th>Genotype</th>
-                    <th>Illness</th>
-                    <th>Gender</th>
-                    <th>Matric Number</th>
+                            </tr>
 
-                </tr>
+                        </thead>
 
-            </thead>
+                        <?php
 
-            <?php
+                        $servername = "localhost";
 
-            $servername = "localhost";
+                        $username = "root";
 
-            $username = "root";
+                        $password = "";
 
-            $password = "";
+                        $dbname = "clinic_management_system";
 
-            $dbname = "clinic_management_system";
+                        // Create connection
 
-            // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
 
-            $conn = new mysqli($servername, $username, $password, $dbname);
+                        $sql = 'SELECT * from patient';
 
-            $sql = 'SELECT * from patient';
+                        if (mysqli_query($conn, $sql)) {
 
-            if (mysqli_query($conn, $sql)) {
+                            echo "";
+                        } else {
 
-                echo "";
-            } else {
+                            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                        }
 
-                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-            }
+                        $count = 1;
 
-            $count = 1;
+                        $result = mysqli_query($conn, $sql);
 
-            $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
 
-            if (mysqli_num_rows($result) > 0) {
+                            // output data of each row
 
-                // output data of each row
+                            while ($row = mysqli_fetch_assoc($result)) { ?>
 
-                while ($row = mysqli_fetch_assoc($result)) { ?>
+                                <tbody>
 
-                    <tbody>
+                                    <tr>
 
-                        <tr>
+                                        <th>
 
-                            <th>
+                                            <?php echo $row['id']; ?>
 
-                                <?php echo $row['id']; ?>
+                                        </th>
+                                        <td>
 
-                            </th>
-                            <td>
+                                            <?php echo $row['name']; ?>
 
-                                <?php echo $row['name']; ?>
+                                        </td>
+                                        <td>
 
-                            </td>
-                            <td>
+                                            <?php echo $row['level']; ?>
 
-                                <?php echo $row['level']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['age']; ?>
 
-                                <?php echo $row['age']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['department']; ?>
 
-                                <?php echo $row['department']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['program']; ?>
 
-                                <?php echo $row['program']; ?>
+                                        </td>
+                                        <td>
 
-                            </td>
-                            <td>
+                                            <?php echo $row['email']; ?>
 
-                                <?php echo $row['email']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['address']; ?>
 
-                                <?php echo $row['address']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['blood_group']; ?>
 
-                                <?php echo $row['blood_group']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['genotype']; ?>
 
-                                <?php echo $row['genotype']; ?>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                            <td>
+                                            <?php echo $row['illness']; ?>
 
-                                <?php echo $row['illness']; ?>
+                                        </td>
+                                        <td>
 
-                            </td>
-                            <td>
+                                            <?php echo $row['gender']; ?>
 
-                                <?php echo $row['gender']; ?>
+                                        </td>
+                                        <td>
 
-                            </td>
-                            <td>
+                                            <?php echo $row['matric_no']; ?>
 
-                                <?php echo $row['matric_no']; ?>
+                                        </td>
 
-                            </td>
-                            
-                            
 
-                        </tr>
 
-                    </tbody>
+                                    </tr>
 
-            <?php
+                                </tbody>
 
-                    $count++;
-                }
-            } else {
+                        <?php
 
-                echo '0 results';
-            }
+                                $count++;
+                            }
+                        } else {
 
-            ?>
+                            echo '0 results';
+                        }
 
-        </table>
+                        ?>
+
+                    </table>
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </body>
 
 </html>

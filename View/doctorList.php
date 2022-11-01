@@ -19,6 +19,7 @@
                 <div class="table-responsive">
 
                     <table class="table table-bordered" id="customers" cellspacing="50">
+                    <h1 class="title_p">List of Available Doctors</h1>
 
                         <thead>
 
