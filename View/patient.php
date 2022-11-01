@@ -88,9 +88,9 @@ if (isset($_GET['err'])) {
                
                 <div class="input_fields gender_field">
                     <label for="Gender">Gender</label><br>
-                    <select name="" id="">
-                        <option class="input" name="gender" value="">Male</option>
-                        <option  class="input" value="" name="gender">Female</option>
+                    <select  name="gender" id="">
+                        <option class="input" value="Male">Male</option>
+                        <option  class="input" value="Female">Female</option>
                     </select>
                 </div>
                 <div class="input_fields">

@@ -43,11 +43,16 @@ class Patient extends Database
     //Validation for patience info
     public function patientsValidation()
     {
-        if (Fun::checkForEmptyInput([$this->name, $this->level,  $this->age, $this->department, $this->email,$this->address, $this->blood_group,$this->illness, $this->gender, $this->matric_no])) {
+      
+        if (Fun::checkForEmptyInput([$this->name, $this->level,  $this->age, $this->department,$this->program, $this->email,$this->address, $this->blood_group,$this->genotype,$this->illness, $this->gender, $this->matric_no])) {
             Fun::redirect("../../View/patient.php", "err", "None of the fields must be empty");
             exit;
         }
-        Fun::redirect("../../View/patient.php", "success", "Data has been saved");
+        if (($this->isExist("name = '$this->name'")) && ($this->isExist("email = '$this->email'"))) {
+            Fun::redirect("../../View/patient.php", "err", "This name or email already exists!");
+            exit;
+        }
+        Fun::redirect("../../View/home.php", "success", "Data has been saved");
     }
 
     public function processPatientInfo($name,$level, $age, $department, $program,$email, $address, $blood_group, $genotype, $illness, $gender,$matric_no)
@@ -71,8 +76,7 @@ class Patient extends Database
     //Save patience info imto the database
     public function savePatientInfo()
     {
-        echo 'name';
-        exit;   
-        return $this->save($this->patient_table, "name='$this->name', email='$this->email', blood_group='$this->blood_group', genotype='$this->genotype', sickness='$this->sickness', address='$this->address', department='$this->department', program='$this->program', faculty='$this->faculty', age='$this->age', level='$this->level'");
+      
+        return $this->save($this->patient_table, "name='$this->name', level='$this->level', age='$this->age', department='$this->department', program='$this->program', email='$this->email', address='$this->address', blood_group='$this->blood_group', genotype='$this->genotype', illness='$this->illness', gender='$this->gender',matric_no='$this->matric_no'");
     }
 }

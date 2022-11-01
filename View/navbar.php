@@ -17,8 +17,8 @@
         </div>
         <ul class="navbar">
             <li><a href="">Dashboard</a></li>
-            <li><a href="../View/doctor.php">Doctor</a></li>
-            <li><a href="../View/patient.php">Patient</a></li>
+            <li><a href="../View/doctorList.php">Doctor</a></li>
+            <li><a href="../View/patientList.php">Patient</a></li>
             <li><a href="">Appointment</a></li>
         </ul>
     </div>
