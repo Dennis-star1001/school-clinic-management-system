@@ -148,9 +148,8 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-   
     flex-direction: column;
-   
+    width: 40%;
     padding-left: 30px;
 }
 

@@ -66,6 +66,7 @@ if (isset($_GET['err'])) {
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="">
                 </div>
+                <span>Already have an account?  <a href="../View/index.php">Login</a></span>
                 <div class="btn">
                     <input type="submit" name="btn_doctor" class="btn_doctor" id="btn_doctor">
                 </div>
