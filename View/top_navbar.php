@@ -27,7 +27,7 @@
 
                 </ul>
             </li>
-            <li><a href="../View/doctorLogin.php">Logout</a></li>
+            <li><a href="../View/index.php">Logout</a></li>
         </ul>
     </div>
 </body>

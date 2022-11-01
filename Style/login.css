@@ -60,3 +60,28 @@
 .doctor_login_btn:hover{
     cursor: pointer;
 }
+.error {
+
+    width: 100%;
+    background-color: pink;
+    color: red;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+
+}
+
+.success {
+    height: 5%;
+    width: 100%;
+    background-color: lightgreen;
+    color: green;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}

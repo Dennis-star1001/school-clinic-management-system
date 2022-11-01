@@ -62,6 +62,10 @@ if (isset($_GET['err'])) {
                     <label for="doctor_type">Doctor Type</label><br>
                     <input type="text" name="doctor_type" id="">
                 </div>
+                <div class="input_fields">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="">
+                </div>
                 <div class="btn">
                     <input type="submit" name="btn_doctor" class="btn_doctor" id="btn_doctor">
                 </div>

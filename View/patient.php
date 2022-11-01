@@ -30,8 +30,8 @@ if (isset($_GET['err'])) {
         // require('../View/top_navbar.php')    
         ?>
 
-        <!-- <div class="patient_form"> -->
-        <form action="../Model/Backend/backend.php" method="post" class='patient_form'>
+        <div class="patient_form">
+        <form action="../Model/Backend/backend.php" method="post" >
 
 
             <div class="logo">
@@ -102,9 +102,9 @@ if (isset($_GET['err'])) {
                 <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
             </div>
         </form>
-        <!-- </div> -->
-        <div class='patient_img'>
-            <img class="image_side_patient" src="../assets/patient.jpg" alt="kid praying">
+        </div>
+        <div class='patient_side'>
+            
         </div>
     </div>
 </body>
