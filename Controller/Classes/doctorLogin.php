@@ -40,7 +40,7 @@ class DoctorLogin extends Doctor
 
 
         if (($this->isExist("email = '$this->email'")) && ($this->isExist("password='$this->password'"))) {
-            Fun::redirect("../../View/home.php", "success", "Data has been saved");
+            Fun::redirect("../../View/dashboard.php", "success", "Data has been saved");
             exit;
         } else {
             Fun::redirect("../../View/index.php", "err", "Email or Password does not exist");
@@ -54,7 +54,7 @@ class DoctorLogin extends Doctor
       
 
 
-        Fun::redirect("../../View/home.php", "success", "Data has been saved");
+        Fun::redirect("../../View/dashboard.php", "success", "Data has been saved");
     }
 
     public function processDoctorLoginInfo($email, $password)

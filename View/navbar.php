@@ -16,7 +16,7 @@
         <img src="../assets/oaustech_logo.png" alt="oaustech_logo" width="60px" class="logo">
         </div>
         <ul class="navbar">
-            <li><a href="">Dashboard</a></li>
+            <li><a href="../View/dashboard.php">Dashboard</a></li>
             <li><a href="../View/doctorList.php">Doctor</a></li>
             <li><a href="../View/patientList.php">Patient</a></li>
             <li><a href="">Appointment</a></li>

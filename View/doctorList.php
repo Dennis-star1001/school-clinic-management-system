@@ -14,7 +14,7 @@
         <?php require('../View/navbar.php') ?>
         <div class="main">
             <?php require('../View/top_navbar.php') ?>
-            <div class="right">
+            <div class="right_table">
             <div class="right_container">
                 <div class="table-responsive">
 
