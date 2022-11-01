@@ -30,8 +30,8 @@ if (isset($_GET['err'])) {
         // require('../View/top_navbar.php')    
         ?>
 
-        <div class="patient_form">
-        <form action="../Model/Backend/backend.php" method="post" >
+        
+        <form action="../Model/Backend/backend.php" method="post" class="patient_form">
 
 
             <div class="logo">
@@ -102,7 +102,6 @@ if (isset($_GET['err'])) {
                 <input type="submit" name="btn_patient" class="btn_patient" id="btn_patient">
             </div>
         </form>
-        </div>
         <div class='patient_side'>
             
         </div>
